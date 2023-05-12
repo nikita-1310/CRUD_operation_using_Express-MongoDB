@@ -1,5 +1,5 @@
 const express = require("express");
-require("./src/db/conn")
+require("./src/db/conn");
 const router = require("./src/routes/UserRouter");
 const routerLogin = require("./src/routes/loginRouter");
 

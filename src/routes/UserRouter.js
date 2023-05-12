@@ -2,6 +2,7 @@ const express = require("express");
 const router = new express.Router();
 const MensRanking = require("../model/UserSchema");
 
+
 router.post("/mens",async(req,res)=>{   //to create the data
     try{
         const addingMensRecord = new MensRanking(req.body)

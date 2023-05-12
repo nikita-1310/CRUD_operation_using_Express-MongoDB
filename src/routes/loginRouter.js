@@ -3,7 +3,7 @@ const routerLogin = new express.Router();
 const bcrypt = require("bcrypt");
 const userData = require("../model/loginSchema");
 const cookieParser = require("cookie-parser")
-const {createTokens, validateToken} = require('./JWT')
+const {createTokens, validateToken} = require('./JWT');
 
 routerLogin.use(cookieParser)
 // app.use(cookieParser)

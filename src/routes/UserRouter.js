@@ -1,7 +1,6 @@
 const express = require("express");
 const router = new express.Router();
-
-const MensRanking = require("../model/schema");
+const MensRanking = require("../model/UserSchema");
 
 router.post("/mens",async(req,res)=>{   //to create the data
     try{
@@ -60,4 +59,6 @@ router.delete("/mens/:id",async(req,res)=>{
         res.status(500).send(e) // server error starts from 500
     }
 })
+
+
 module.exports = router;
